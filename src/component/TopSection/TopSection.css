@@ -1,0 +1,155 @@
+.Header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.HeaderWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 51px;
+}
+
+.Navigation__Innner {
+    display: flex;
+    align-items: center;
+}
+
+.Nav {
+    margin-right: 48px;
+}
+
+.Nav__item{
+    text-decoration: none;
+    font-size: 24px;
+    color: #FFFFFF;
+    margin-left: 24px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    transition: .3s ease;
+}
+
+.Nav__item:first-child {
+    margin-left: 0;
+}
+
+.Nav__item:after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    background-color: #F5BD41;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.Nav__item:hover {
+    color: #F5BD41;
+}
+
+.Nav__item:hover:after {
+    display: block;
+}
+.NavImg img {
+    padding-right: 24px;
+}
+
+.MainSection {
+    width: 100%;
+    height: 900px;
+    min-height: 100vh;
+    background: url(../../img/mainSection/bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.MainSectionTitle {
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 59px;
+    color: #FFFFFF;
+}
+
+.FormDescr {
+    display: flex;
+    margin-left: 24px;
+}
+
+.FormDescr p {
+    margin-right: 221px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+    margin-top: 100px;
+}
+
+.FormInputBtn {
+    display: flex;
+}
+
+.Input-Hotel {
+    width: 467px;
+    height: 64px;
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: 18px;
+    color: #383838;
+}
+
+.Input-Hotel:placeholder-shown {
+    padding-left: 24px;
+}
+
+.Input-Check-in—Check-out {
+    width: 259px;
+    height: 64px;
+    border: none;
+    font-size: 18px;
+    color: #383838;
+    padding-left: 24px;
+}
+
+.Input-Adults—0Children—1Room {
+    width: 314px;
+    height: 64px;
+    border: none;
+    font-size: 18px;
+    color: #383838;
+    padding-left: 24px;
+}
+
+.Btn {
+    width: 192px;
+    height: 64px;
+    background: #3077C6;
+    border: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    outline: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.Btn:hover {
+    background: #0076fd;
+    transition: all .3s;
+}
+
+.Btn:active {
+    background: #0053b3;
+    transition: all .3s;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Title.css';
 
-function Title(){
+function Title(props){
     return(
-        <h2 className= "HotelBlockTitle">Homes guests loves</h2>
+        <h2 className= "HotelBlockTitle">{props.text}</h2>
     );
 };
 
